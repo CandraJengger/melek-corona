@@ -16,19 +16,24 @@ class AppBar extends HTMLElement {
                     padding: 0;
                     box-sizing: border-box;
                 }
-                .nav-logo {
+                :host {
                     display: block;
                     width: 100%;
                     height: 80px;
-                    padding: 20px 80px;
+                    position: fixed;
+                    z-index: 111;
                     box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+                    background-color: #fff;
+                }
+                .nav-logo {
+                    padding: 20px 80px;
                 }
                 .nav-logo > img {
                     width: 200px;
                 }
             </style>
             <div class="nav-logo" id="logo">
-            <img src="../../../src/img/your-logo.png" alt="Logo">
+                <img src="../../../src/img/your-logo.png" alt="Logo">
             </div>
         `
     }
