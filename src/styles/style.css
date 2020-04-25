@@ -8,6 +8,11 @@ body {
     font-family: sans-serif;
 }
 
-#chart {
-    padding: 40px 80px;
+#charts {
+    height: 100vh;
+}
+#chart1,
+#chart2,
+#chart3 {
+    padding: 10px 80px;
 }

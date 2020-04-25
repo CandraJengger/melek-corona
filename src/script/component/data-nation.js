@@ -33,6 +33,7 @@ class DataNation extends HTMLElement {
                 width: 100%;
                 height: 85vh;
                 text-align:center;
+                background-attachment: fixed;
             }
             h1 {
                 color: #20F4F5;
