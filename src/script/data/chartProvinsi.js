@@ -3,10 +3,10 @@ class ChartProvinsi {
 
     static getData() {
         return fetch("https://api.kawalcorona.com/indonesia/provinsi/")
-        .then(respon => {
+        .then(respon => { 
             return respon.json()
         })
-        .then(responJSON => {
+        .then(responJSON => { 
             const data = responJSON
             let kodeProv = [] 
             let namaProvinsi = []

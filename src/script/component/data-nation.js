@@ -31,7 +31,7 @@ class DataNation extends HTMLElement {
                                   url(../../../src/img/id.png);
                 background-size:cover;
                 width: 100%;
-                height: 85vh;
+                height: 100vh;
                 text-align:center;
                 background-attachment: fixed;
             }

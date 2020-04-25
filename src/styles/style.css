@@ -11,8 +11,23 @@ body {
 #charts {
     height: 100vh;
 }
+#chart3 {
+    margin-bottom: 60px;
+}
 #chart1,
 #chart2,
 #chart3 {
     padding: 10px 80px;
+}
+
+footer {
+    position: relative;
+}
+app-footer {
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #333;
+    text-align: center;
+    position: relative;
 }
