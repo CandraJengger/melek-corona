@@ -1,3 +1,7 @@
+@font-face {
+    font-family: roboto;
+    src: url("../../src/fonts/Roboto-Regular-webfont.woff") format("woff");
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: roboto;
 }
 
 #charts {
@@ -30,4 +34,189 @@ app-footer {
     background-color: #333;
     text-align: center;
     position: relative;
+}
+
+
+#about-covid {
+    width: 100%;
+    text-align: center;
+    margin: 80px auto;
+    padding: 0 100px;
+}
+
+#about-covid h1 {
+    margin-bottom: 80px;
+}
+
+#about-covid section {
+    display: flex;
+}
+
+
+#about-covid section article {
+    flex: 3;
+    padding-left: 40px;
+    text-align: left;
+}
+
+#about-covid section article h2 {
+    margin-bottom: 20px;
+}
+
+#about-covid section article p {
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-size: 17px;
+    word-spacing: 1px;
+    color: #353535;
+}
+
+#about-covid section .gejala {
+    flex: 2;
+    background-color: #20F4F5;
+    max-width: 600px;
+    width: 600px;
+    min-width: 300px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#about-covid section .gejala .wrap-image {
+    display: flex;
+    padding: 11px;
+    width: 100%;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+
+#about-covid section .gejala .wrap-image image-figure {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#jenis-pasien {
+    width: 100%;
+    padding: 50px 70px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#jenis-pasien h1 {
+    margin-bottom: 30px;
+}
+
+#jenis-pasien p {
+    width: 450px;
+    font-size: 17px;
+    margin: 0 auto 30px;
+}
+
+#jenis-pasien .wrap-item {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+#jenis-pasien .wrap-item p {
+    width: 270px;
+    text-align: left;
+}
+#jenis-pasien .wrap-item h2 {
+    display: inline-block;
+    font-weight: normal;
+    color: #20F4F5;
+    margin-bottom: 15px;
+}
+#jenis-pasien .wrap-item h2::after {
+    content: '';
+    display: block;
+    background-color: #20F4F5;
+    height: 2px;
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    transition: .5s;
+}
+#jenis-pasien .wrap-item h2:hover::after {
+    width: 30%;
+}
+
+#boleh {
+    width: 100%;
+    padding: 0px 200px;
+    height: 70vh;
+    text-align: center;
+}
+
+#boleh h1 {
+    margin-bottom: 30px;
+}
+#boleh .wrap {
+    display: flex;
+    justify-content: center;
+}
+#boleh .wrap img {
+    max-width: 400px;
+    min-width: 200px;
+}
+#boleh .wrap article {
+    text-align: left;
+    padding-left: 20px;
+}
+#boleh .wrap article ol li {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+#tidak-boleh {
+    width: 100%;
+    padding: 0 200px 50px;
+    height: 100vh;
+    text-align: center;
+}
+
+#tidak-boleh h1 {
+    margin-bottom: 50px;
+}
+#tidak-boleh .wrap {
+    display: flex;
+    justify-content: center;
+}
+#tidak-boleh .wrap img {
+    max-width: 400px;
+    min-width: 200px;
+} 
+#tidak-boleh .wrap article {
+    text-align: left;
+    
+}
+
+#tidak-boleh .wrap article ol li {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+
+
+
+@media screen and (max-width:400px) {
+    #about-covid {
+        padding: 0 30px;
+    }
+    #about-covid section {
+        display: flex;
+        flex-direction: column;
+    }
+    #about-covid section article {
+        padding-left: 0px;
+    }
+    #about-covid section .gejala .wrap-image {
+        flex-direction: column;
+    }
+    #about-covid section .gejala .wrap-image image-figure {
+        display: block;
+    }
 }

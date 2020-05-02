@@ -11,8 +11,6 @@ class AppFooter extends HTMLElement{
                 height: 50px;
                 background-color: #333;
                 margin-top: 50px;
-                margin-left: 5px;
-                margin-right: 5px;
                 border-radius: 50%;
                 line-height: 50px;
                 font-size: 18px;
@@ -50,11 +48,27 @@ class AppFooter extends HTMLElement{
                 left: 50%;
                 transform: translate(-50%,-50%);
             }
-            
+            .wrap {
+                text-decoration:none;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
         </style>
-        <a href="https://www.instagram.com/aldycandra_/"><span class="social"><i class="fa fa-instagram"></i></span></a>
-        <a href="https://www.linkedin.com/in/dimas-aldi-candra-saputra-37662b1a3/"><span class="social"><i class="fa fa-linkedin"></i></span></a>
-        <a href="https://github.com/CandraJengger"><span class="social"><i class="fa fa-github"></i></span></a>
+        <a target="_blank" href="https://www.instagram.com/aldycandra_/" class="wrap">
+            <span class="social">
+                <i class="fa fa-instagram"></i>
+            </span>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/dimas-aldi-candra-saputra-37662b1a3/" class="wrap">
+            <span class="social">
+                <i class="fa fa-linkedin"></i>
+            </span>
+        </a>
+        <a target="_blank" href="https://github.com/CandraJengger" class="wrap">
+            <span class="social">
+                <i class="fa fa-github"></i>
+            </span>
+        </a>
         <hr></hr>
         <h4 class="copy">Copyright &copy; Dimas Aldi Candra S.</h4>
         

@@ -20,9 +20,6 @@ class ChartProvinsi {
                 sembuh.push(total.attributes.Kasus_Semb)
                 meninggal.push(total.attributes.Kasus_Meni)
             });
-            console.log(kodeProv)
-            console.log(namaProvinsi)
-            console.log(positif)
                   
         let options = {
             series: [{
