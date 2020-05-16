@@ -38,9 +38,19 @@ class TableProvinsi extends HTMLElement {
             th, td {
                 text-align:left;
             }
-            @media screen and (max-width:400px) {
+            @media screen and (max-width:800px) {
+                h1 {
+                    width: 70%;
+                }
+            }
+            @media screen and (max-width:630px) {
                 table {
                     width: 80%;
+                }
+            }
+            @media screen and (max-width:400px) {
+                table {
+                    width: 100%;
                 }
             }
             </style>

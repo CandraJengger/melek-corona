@@ -70,6 +70,35 @@ class DataNation extends HTMLElement {
                 margin-top: 10px;
                 font-size: 30px
             }
+            @media screen and (max-width:800px) {
+                :host .hero .card {
+                    transform: translate(0, 230px);
+                } 
+
+                .hero {
+                    background-position: -600px 10px;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                h1 {
+                    font-size: 60px;
+                }
+                :host {
+                    height: 180vh;
+                }
+                :host .hero .card {
+                    transform: translateY(650px);
+                }
+                h1,h4 {
+                    transform: translateY(360px);
+                }
+            }
+
+            @media screen and (max-width:400px) {
+                h1 {
+                    font-size: 40px;
+                }
+            }
             </style>
 
             <div class="hero">

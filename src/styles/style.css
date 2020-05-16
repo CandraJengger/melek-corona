@@ -65,7 +65,7 @@ app-footer {
 
 #about-covid section article p {
     margin-bottom: 20px;
-    line-height: 20px;
+    line-height: 25px;
     font-size: 17px;
     word-spacing: 1px;
     color: #353535;
@@ -78,7 +78,7 @@ app-footer {
     width: 600px;
     min-width: 300px;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 25px;
     border-radius: 8px;
 }
 
@@ -110,7 +110,7 @@ app-footer {
 }
 
 #jenis-pasien p {
-    width: 450px;
+    width: 40%;
     font-size: 17px;
     margin: 0 auto 30px;
 }
@@ -121,8 +121,9 @@ app-footer {
     justify-content: space-around;
 }
 #jenis-pasien .wrap-item p {
-    width: 270px;
+    width: 100%;
     text-align: left;
+    padding-left: 20px;
 }
 #jenis-pasien .wrap-item h2 {
     display: inline-block;
@@ -147,8 +148,9 @@ app-footer {
 #boleh {
     width: 100%;
     padding: 0px 200px;
-    height: 70vh;
+    height: auto;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #boleh h1 {
@@ -160,7 +162,8 @@ app-footer {
 }
 #boleh .wrap img {
     max-width: 400px;
-    min-width: 200px;
+    width: 350px;
+    height: auto;
 }
 #boleh .wrap article {
     text-align: left;
@@ -174,8 +177,9 @@ app-footer {
 #tidak-boleh {
     width: 100%;
     padding: 0 200px 50px;
-    height: 100vh;
+    height: auto;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #tidak-boleh h1 {
@@ -187,7 +191,7 @@ app-footer {
 }
 #tidak-boleh .wrap img {
     max-width: 400px;
-    min-width: 200px;
+    width: 350px;
 } 
 #tidak-boleh .wrap article {
     text-align: left;
@@ -200,8 +204,98 @@ app-footer {
 }
 
 
+@media screen and (max-width:1300px) {
+    #about-covid section .gejala .wrap-image {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #jenis-pasien .wrap-item {
+        flex-direction: column;
+    }
+
+    #boleh .wrap {
+        flex-direction: column;
+    }
+    #boleh .wrap img {
+        margin: auto;
+    }
+    #boleh {
+        padding: 0 100px;
+    }
+
+    #tidak-boleh .wrap {
+        flex-direction: column;
+    }
+    #tidak-boleh .wrap img {
+        margin: auto;
+    }
+    #tidak-boleh {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    
+    #about-covid section {
+        flex-direction: column;
+    }
+    #about-covid section .gejala {
+        width: 100%;
+    }
+    #about-covid section .gejala .wrap-image {
+        flex-direction: row;
+    }
+    #about-covid section .gejala p {
+        width: 76%;
+        margin: auto;
+    }
+
+    #about-covid section .gejala {
+        margin-bottom: 50px;
+    }
+
+    #jenis-pasien p {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #about-covid section .gejala .wrap-image {
+        flex-direction: column;
+    }
+    #about-covid section .gejala .wrap-image image-figure {
+        display: block;
+    }
+    #chart1,
+    #chart2,
+    #chart3 {
+        padding: 10px 20px;
+    }
+    #about-covid {
+        padding: 0 30px;
+    }
+    #jenis-pasien {
+        padding: 50px 30px;
+    }
+    #boleh {
+        height: auto;
+        margin-bottom: 50px;
+        padding: 0 50px;
+    }
+    #tidak-boleh {
+        height: auto;
+        padding: 0 50px;
+    }
+}
 
 
+@media screen and (max-width:450px) {
+    #about-covid section article {
+        padding-left: 0;
+    }
+}
 @media screen and (max-width:400px) {
     #about-covid {
         padding: 0 30px;
@@ -219,4 +313,11 @@ app-footer {
     #about-covid section .gejala .wrap-image image-figure {
         display: block;
     }
+    #boleh .wrap img {
+        width: 100%;
+    }
+    #tidak-boleh .wrap img {
+        width: 100%;
+    }
+    
 }

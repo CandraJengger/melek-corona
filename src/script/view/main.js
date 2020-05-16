@@ -7,8 +7,9 @@ import ChartProvinsi from '../data/chartProvinsi.js'
 const main = () => {
     const dataNationElement = document.querySelector('data-nation')
     const dataTableProvinsi = document.querySelector('table-provinsi')
+    const appBar = document.getElementById('app-bar')
 
-
+    console.log(appBar)
     const renderProvinsi = results => {
         dataTableProvinsi.data = results
     }
@@ -31,6 +32,9 @@ const main = () => {
 
     //chart
     ChartProvinsi.getData() 
+
+
+
 }
 
 export default main 

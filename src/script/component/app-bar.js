@@ -1,3 +1,4 @@
+
 class AppBar extends HTMLElement {
     constructor() {
         super()
@@ -48,6 +49,46 @@ class AppBar extends HTMLElement {
                 }
                 input[type="button"]:hover {
                     transform: translateY(-2px);
+                }
+
+                @media screen and (max-width:800px) {
+                    :host {
+                        justify-content: flex-start;
+                        height: auto;
+                    }
+                    .nav-logo {
+                        padding: 20px 0px 20px 20px;
+                    }
+                    input[type="button"] {
+                        margin-left: 50px;
+                    }
+                }
+
+                @media screen and (max-width:500px) {
+                    :host {
+                        flex-direction: column;
+                    }
+                    .nav-logo {
+                        padding: 20px 0 0 20px;
+                    }
+                    input[type="button"] {
+                        width: 200px;
+                        background-color: transparent;
+                        color: #20F4F5;
+                        border: none;
+                        margin: 0 0 0 20px;
+                        font-family: calibri;
+                        cursor: pointer;
+                        border-radius: 0;
+                        font-size: 15px;
+                        box-shadow: none;
+                        transition: .3s;
+                        text-decoration: underline;
+                    }
+                    input[type="button"] {
+                        margin-left: -10px;
+                        transform: translateY(-20px);
+                    }
                 }
             </style>
             <div class="nav-logo" id="logo">
