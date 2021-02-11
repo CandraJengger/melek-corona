@@ -31,7 +31,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "apexcharts": "^3.19.0",
+    "apexcharts": "^3.24.0",
     "webpack-icons-installer": "^2.0.0"
   }
 }
